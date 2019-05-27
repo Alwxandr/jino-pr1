@@ -1,0 +1,252 @@
+@import "normalize"
+
+$maxwidth: 1092px
+$minwidth: 819px
+$gwith: 80px
+$gmargin: 12px
+
+
+.wrapper
+  margin: 0 auto
+  max-width: 1426px
+.elipses
+  float: right
+  margin-top: 384px
+  margin-right: 24px
+.el-1, .el-2,.el-3
+  width: 10px
+  height: 10px
+  border: 2px solid black
+  border-radius: 50%
+  margin-top: 18px
+  cursor: pointer
+  background-color: white
+.el-1
+  background-color: black
+
+.dnone
+  display: none
+.ib
+  display: inline-block
+
+.container
+  margin: 0 auto
+  width: 90%
+  max-width: $maxwidth
+  min-width: $minwidth
+
+.row
+  display: flex
+.center
+  justify-content: center
+
+.col-1
+  width: $gwith + $gmargin
+.col-2
+  width: 2*$gwith + 2*$gmargin
+.col-3
+  width: 3*$gwith + 3*$gmargin
+.col-4
+  width: 4*$gwith + 4*$gmargin
+.col-5
+  width: 5*$gwith + 5*$gmargin
+.col-6
+  width: 6*$gwith + 6*$gmargin
+.col-7
+  width: 7*$gwith + 7*$gmargin
+.col-8
+  width: 8*$gwith + 8*$gmargin
+.col-9
+  width: 9*$gwith + 9*$gmargin
+.col-10
+  width: 10*$gwith + 10*$gmargin
+.col-11
+  width: 11*$gwith + 11*$gmargin
+.col-12
+  width: 12*$gwith + 11*$gmargin
+
+.col-2-edge
+  width: 2*$gwith + $gmargin
+.col-8-end
+  width: 8*$gwith + 9*$gmargin
+.col-8-minus
+  width: 8*$gwith + 7*$gmargin
+.col-9-edge
+  width: 9*$gwith + 8*$gmargin;
+
+@media screen and (min-width: 720px) and (max-width: 819px)
+  $maxwidth: 819px
+  $minwidth: 720px
+  $gwith: 60px
+  $gmargin: 9px
+
+  .container
+    margin: 0 auto
+    max-width: $maxwidth
+    min-width: $minwidth
+
+
+  .col-1
+    width: $gwith + $gmargin
+  .col-2
+    width: 2*$gwith + 2*$gmargin
+  .col-3
+    width: 3*$gwith + 3*$gmargin
+  .col-4
+    width: 4*$gwith + 4*$gmargin
+  .col-5
+    width: 5*$gwith + 5*$gmargin
+  .col-6
+    width: 6*$gwith + 6*$gmargin
+  .col-7
+    width: 7*$gwith + 7*$gmargin
+  .col-8
+    width: 8*$gwith + 8*$gmargin
+  .col-9
+    width: 9*$gwith + 9*$gmargin
+  .col-10
+    width: 10*$gwith + 10*$gmargin
+  .col-11
+    width: 11*$gwith + 11*$gmargin
+  .col-12
+    width: 12*$gwith + 11*$gmargin
+  .col-2-edge
+    width: 2*$gwith + $gmargin
+  .col-8-end
+    width: 8*$gwith + 9*$gmargin
+  .col-8-minus
+    width: 8*$gwith + 7*$gmargin
+
+@media screen and (min-width: 540px) and (max-width: 720px)
+  $maxwidth: 720px
+  $minwidth: 540px
+  $gwith: 40px
+  $gmargin: 6px
+
+  .container
+    margin: 0 auto
+    max-width: $maxwidth
+    min-width: $minwidth
+
+
+  .col-1
+    width: $gwith + $gmargin
+  .col-2
+    width: 2*$gwith + 2*$gmargin
+  .col-3
+    width: 3*$gwith + 3*$gmargin
+  .col-4
+    width: 4*$gwith + 4*$gmargin
+  .col-5
+    width: 5*$gwith + 5*$gmargin
+  .col-6
+    width: 6*$gwith + 6*$gmargin
+  .col-7
+    width: 7*$gwith + 7*$gmargin
+  .col-8
+    width: 8*$gwith + 8*$gmargin
+  .col-9
+    width: 9*$gwith + 9*$gmargin
+  .col-10
+    width: 10*$gwith + 10*$gmargin
+  .col-11
+    width: 11*$gwith + 11*$gmargin
+  .col-12
+    width: 12*$gwith + 11*$gmargin
+  .col-2-edge
+    width: 2*$gwith + $gmargin
+  .col-8-end
+    width: 8*$gwith + 9*$gmargin
+  .col-8-minus
+    width: 8*$gwith + 7*$gmargin
+
+@media screen and (min-width: 410px) and (max-width: 540px)
+  $maxwidth: 540px
+  $minwidth: 410px
+  $gwith: 30px
+  $gmargin: 4px
+
+  .container
+    margin: 0 auto
+    max-width: $maxwidth
+    min-width: $minwidth
+
+
+  .col-1
+    width: $gwith + $gmargin
+  .col-2
+    width: 2*$gwith + 2*$gmargin
+  .col-3
+    width: 3*$gwith + 3*$gmargin
+  .col-4
+    width: 4*$gwith + 4*$gmargin
+  .col-5
+    width: 5*$gwith + 5*$gmargin
+  .col-6
+    width: 6*$gwith + 6*$gmargin
+  .col-7
+    width: 7*$gwith + 7*$gmargin
+  .col-8
+    width: 8*$gwith + 8*$gmargin
+  .col-9
+    width: 9*$gwith + 9*$gmargin
+  .col-10
+    width: 10*$gwith + 10*$gmargin
+  .col-11
+    width: 11*$gwith + 11*$gmargin
+  .col-12
+    width: 12*$gwith + 11*$gmargin
+  .col-2-edge
+    width: 2*$gwith + $gmargin
+  .col-8-end
+    width: 8*$gwith + 9*$gmargin
+  .col-8-minus
+    width: 8*$gwith + 7*$gmargin
+
+@media screen and (min-width: 320px) and (max-width: 410px)
+  $maxwidth: 410px
+  $minwidth: 320px
+  $gwith: 26px
+  $gmargin: 4px
+
+  .container
+    margin: 0 auto
+    max-width: $maxwidth
+    min-width: $minwidth
+
+
+  .col-1
+    width: $gwith + $gmargin
+  .col-2
+    width: 2*$gwith + 2*$gmargin
+  .col-3
+    width: 3*$gwith + 3*$gmargin
+  .col-4
+    width: 4*$gwith + 4*$gmargin
+  .col-5
+    width: 5*$gwith + 5*$gmargin
+  .col-6
+    width: 6*$gwith + 6*$gmargin
+  .col-7
+    width: 7*$gwith + 7*$gmargin
+  .col-8
+    width: 8*$gwith + 8*$gmargin
+  .col-9
+    width: 9*$gwith + 9*$gmargin
+  .col-10
+    width: 10*$gwith + 10*$gmargin
+  .col-11
+    width: 11*$gwith + 11*$gmargin
+  .col-12
+    width: 12*$gwith + 11*$gmargin
+  .col-2-edge
+    width: 2*$gwith + $gmargin
+  .col-8-end
+    width: 8*$gwith + 9*$gmargin
+  .col-8-minus
+    width: 8*$gwith + 7*$gmargin
+
+
+@import "page-1"
+@import "page-2"
+@import "page-3"
