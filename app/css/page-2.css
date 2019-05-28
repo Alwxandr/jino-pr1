@@ -1,0 +1,197 @@
+.text-logo-2 {
+  font-size: 16px;
+  font-family: "PTSans",sans-serif;
+  margin-left: 5px;
+  color: #333333; }
+
+.reg-domain {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 65px; }
+
+.bonuses {
+  margin-top: 80px;
+  padding-inline-start: 0px; }
+  .bonuses li {
+    text-align: center;
+    vertical-align: top;
+    width: 24%;
+    margin-top: 10px; }
+  .bonuses a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block; }
+    .bonuses a h3 {
+      font-family: "PT Sans" ,Arial,Helvetica,sans-serif;
+      color: #333333;
+      line-height: 1.2;
+      display: block;
+      margin-bottom: 0;
+      text-align: center;
+      font-weight: normal; }
+  .bonuses .p-1 a:before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-image: url(/app/img/businesscard.svg);
+    background-repeat: no-repeat; }
+  .bonuses .p-2 a:before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-image: url(/app/img/dns.svg);
+    background-repeat: no-repeat; }
+  .bonuses .p-3 a:before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-image: url(/app/img/certificate.svg);
+    background-repeat: no-repeat; }
+  .bonuses .p-4 a:before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-image: url(/app/img/autorenewal.svg);
+    background-repeat: no-repeat; }
+  .bonuses .p-5 a:before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-image: url(/app/img/cloud.svg);
+    background-repeat: no-repeat; }
+  .bonuses .p-6 a:before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-image: url(/app/img/freessl.svg);
+    background-repeat: no-repeat; }
+  .bonuses .p-7 a:before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-image: url(/app/img/dnssec.svg);
+    background-repeat: no-repeat; }
+  .bonuses .p-8 a:before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-image: url(/app/img/redirect.svg);
+    background-repeat: no-repeat; }
+
+.create-page-2 {
+  margin-top: 60px; }
+
+.inlayset-content {
+  width: 415%;
+  margin-top: 40px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative; }
+
+.content {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.inlayset-content:before, .inlayset-content:after {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.inlayset-content:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #f7f7f7;
+  border-width: 18px;
+  margin-left: -18px; }
+
+.inlayset-content:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #ccc;
+  border-width: 19px;
+  margin-left: -19px; }
+
+.business-card-li .inlayset-content:before, .business-card-li .inlayset-content:after, .cloud-li .inlayset-content:before, .cloud-li .inlayset-content:after {
+  left: 12%; }
+
+.dns-li .inlayset-content, .free-SSL-li .inlayset-content {
+  margin-left: -101%; }
+
+.dns-li .inlayset-content:before, .dns-li .inlayset-content:after, .free-SSL-li .inlayset-content:before, .free-SSL-li .inlayset-content:after {
+  left: 36%; }
+
+.sert-li .inlayset-content, .DNSSEC-li .inlayset-content {
+  margin-left: -202%; }
+
+.sert-li .inlayset-content:before, .sert-li .inlayset-content:after, .DNSSEC-li .inlayset-content:before, .DNSSEC-li .inlayset-content:after {
+  left: 60%; }
+
+.autodetect-li .inlayset-content, .relocation-li .inlayset-content {
+  margin-left: -303%; }
+
+.autodetect-li .inlayset-content:before, .autodetect-li .inlayset-content:after, .relocation-li .inlayset-content:before, .relocation-li .inlayset-content:after {
+  left: 85%; }
+
+@media screen and (min-width: 720px) and (max-width: 819px) {
+  .reg-domain {
+    text-align: center;
+    font-size: 32px; } }
+
+@media screen and (min-width: 540px) and (max-width: 720px) {
+  .reg-domain {
+    text-align: center;
+    font-size: 30px; }
+  .bonuses li {
+    width: 30%; }
+  .inlayset-content {
+    width: 320%; }
+  .autodetect-li .inlayset-content, .DNSSEC-li .inlayset-content {
+    margin-left: 0; }
+  .autodetect-li .inlayset-content:before, .autodetect-li .inlayset-content:after, .DNSSEC-li .inlayset-content:before, .DNSSEC-li .inlayset-content:after {
+    left: 13%; }
+  .dns-li .inlayset-content, .cloud-li .inlayset-content, .relocation-li .inlayset-content {
+    margin-left: -150px; }
+  .dns-li .inlayset-content:before, .dns-li .inlayset-content:after, .cloud-li .inlayset-content:before, .cloud-li .inlayset-content:after, .relocation-li .inlayset-content:before, .relocation-li .inlayset-content:after {
+    left: 42%; }
+  .sert-li .inlayset-content, .free-SSL-li .inlayset-content {
+    margin-left: -324px; }
+  .sert-li .inlayset-content:before, .sert-li .inlayset-content:after, .free-SSL-li .inlayset-content:before, .free-SSL-li .inlayset-content:after {
+    left: 78%; } }
+
+@media screen and (max-width: 410px) and (max-width: 540px) {
+  .reg-domain {
+    text-align: center;
+    font-size: 26px; }
+  .bonuses li {
+    width: 48%; }
+  .inlayset-content {
+    width: 200%; }
+  .business-card-li .inlayset-content, .sert-li .inlayset-content, .cloud-li .inlayset-content, .DNSSEC-li .inlayset-content {
+    margin-left: 0; }
+  .business-card-li .inlayset-content:before, .business-card-li .inlayset-content:after, .sert-li .inlayset-content:before, .sert-li .inlayset-content:after, .cloud-li .inlayset-content:before, .cloud-li .inlayset-content:after, .DNSSEC-li .inlayset-content:before, .DNSSEC-li .inlayset-content:after {
+    left: 24%; }
+  .dns-li .inlayset-content, .autodetect-li .inlayset-content, .free-SSL-li .inlayset-content, .relocation-li .inlayset-content {
+    margin-left: -200px; }
+  .dns-li .inlayset-content:before, .dns-li .inlayset-content:after, .autodetect-li .inlayset-content:before, .autodetect-li .inlayset-content:after, .free-SSL-li .inlayset-content:before, .free-SSL-li .inlayset-content:after, .relocation-li .inlayset-content:before, .relocation-li .inlayset-content:after {
+    left: 75%; } }
+
+@media screen and (min-width: 320px) and (max-width: 410px) {
+  .inlayset-content {
+    margin-top: 50px; }
+  .dns-li .inlayset-content, .autodetect-li .inlayset-content, .free-SSL-li .inlayset-content, .relocation-li .inlayset-content {
+    margin-left: -150px; }
+  .dns-li .inlayset-content:before, .dns-li .inlayset-content:after, .autodetect-li .inlayset-content:before, .autodetect-li .inlayset-content:after, .free-SSL-li .inlayset-content:before, .free-SSL-li .inlayset-content:after, .relocation-li .inlayset-content:before, .relocation-li .inlayset-content:after {
+    left: 75%; } }
