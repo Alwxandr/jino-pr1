@@ -84,6 +84,8 @@
   color: rgba(255, 255, 255, 0.502);
   line-height: 1.2;
   margin-top: 48px; }
+  .footer span {
+    text-decoration: underline; }
 
 @media screen and (min-width: 819px) and (max-width: 912px) {
   .why {

@@ -1,53 +1,57 @@
 
-var check_but = document.querySelector(".check-but");
-var input_form = document.querySelector(".search-form");
-var check_message = document.querySelector(".check-message");
-var bonuses_block = document.querySelector(".bonuses");
-var page1_select = document.querySelector(".el-1");
-var page2_select = document.querySelector(".el-2");
-var page3_select = document.querySelector(".el-3");
+var checkBut = document.querySelector(".check-but");
+var inputForm = document.querySelector(".search-form");
+var checkMessage = document.querySelector(".check-message");
+var bonusesBlock = document.querySelector(".bonuses");
+var page1Select = document.querySelector(".el-1");
+var page2Select = document.querySelector(".el-2");
+var page3Select = document.querySelector(".el-3");
 var page1 = document.querySelector(".page-1");
 var page2 = document.querySelector(".page-2");
 var page3 = document.querySelector(".page-3");
-var down_button = document.querySelector(".down");
+var downButton = document.querySelector(".down-but");
+var pages2 = [page2Select, downButton];
+var windowCoords = document.documentElement.clientHeight;
 
-page1_select.onclick = function (event){
+page1Select.onclick = function (event){
     page1.classList.remove("dnone");
-    page1_select.style.backgroundColor = 'black';
+    page1Select.style.backgroundColor = 'black';
+    page1Select.style.borderColor  = 'white';
     page2.classList.add("dnone");
-    page2_select.style.backgroundColor = 'white';
+    page2Select.style.backgroundColor = 'white';
+    page2Select.style.borderColor  = 'black';
     page3.classList.add("dnone");
-    page3_select.style.backgroundColor = 'white';
+    page3Select.style.backgroundColor = 'white';
+    page3Select.style.borderColor  = 'black';
+}
 
-}
-page2_select.onclick = function (event){
+page3Select.onclick = function (event){
     page1.classList.add("dnone");
-    page1_select.style.backgroundColor = 'white';
-    page2.classList.remove("dnone");
-    page2_select.style.backgroundColor = 'black';
-    page3.classList.add("dnone");
-    page3_select.style.backgroundColor = 'white';
-}
-page3_select.onclick = function (event){
-    page1.classList.add("dnone");
-    page1_select.style.backgroundColor = 'white';
+    page1Select.style.backgroundColor = 'white';
+    page1Select.style.borderColor  = 'black';
     page2.classList.add("dnone");
-    page2_select.style.backgroundColor = 'white';
+    page2Select.style.backgroundColor = 'white';
+    page2Select.style.borderColor  = 'white';
     page3.classList.remove("dnone");
-    page3_select.style.backgroundColor = 'black';
+    page3Select.style.backgroundColor = 'black';
+    page3Select.style.borderColor  = 'white';
 }
 
-down_button.onclick = function (event){
-    page1.classList.add("dnone");
-    page1_select.style.backgroundColor = 'white';
-    page2.classList.remove("dnone");
-    page2_select.style.backgroundColor = 'black';
-    page3.classList.add("dnone");
-    page3_select.style.backgroundColor = 'white';
-}
+pages2.forEach(function (v) {
+    v.onclick = function (event) {
+        page1.classList.add("dnone");
+        page1Select.style.backgroundColor = 'white';
+        page1Select.style.borderColor  = 'black';
+        page2.classList.remove("dnone");
+        page2Select.style.backgroundColor = 'black';
+        page2Select.style.borderColor  = 'white';
+        page3.classList.add("dnone");
+        page3Select.style.backgroundColor = 'white';
+        page3Select.style.borderColor  = 'black';
+    }
+})
 
-bonuses_block.onclick = function (event){
-
+bonusesBlock.onclick = function (event){
     var current_block = event.target;
     var all_text = document.querySelectorAll(".inlayset-content");
 
@@ -55,7 +59,6 @@ bonuses_block.onclick = function (event){
         if(v !== current_block.nextElementSibling){
             v.classList.add("dnone");
         }
-
     });
     if(current_block.tagName === "A"){
 
@@ -67,12 +70,13 @@ bonuses_block.onclick = function (event){
     }
 };
 
-check_but.onclick = function () {
-   if(input_form.value){
-       check_message.innerText = '  Домен '+ input_form.value +' - свободен.';
-       check_message.nextElementSibling.classList.remove("dnone")
+checkBut.onclick = function () {
+   if(inputForm.value){
+       checkMessage.innerText = '  Домен '+ inputForm.value +' - свободен.';
+       checkMessage.nextElementSibling.classList.remove("dnone")
    }else{
        alert("Введите домен для проверки");
    }
 }
+
 
